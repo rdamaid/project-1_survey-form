@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulir Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survei Trip Himalaya</h1>
+    <p id="description">A once in a lifetime experience</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Nama: <input id="name" type="text" placeholder="nama lengkap" required /></label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="email pribadi" required /></label>
+      <label id="number-label">Umur: (tahun)<input id="number" type="number" min="4" max="150" placeholder="umur pada tahun ini" required /></label>
+      <label>Status: 
+        <select id="dropdown">
+          <option value="">(pilih satu)</option>
+          <option value="1">Menikah</option>
+          <option value="2">Belum menikah</option>
+        </select>
+      </label>
+      <p class="subhead">Pekerjaan:</p>
+      <label>
+        <input type="radio" name="job" class="inline" value="mahasiswa" /> Mahasiswa
+      </label>
+      <label>
+        <input type="radio" name="job" class="inline" value="non-mahasiswa" /> Non-mahasiswa
+      </label>
+      <p class="subhead">Makanan favorit:</p>
+      <label>
+        <input type="checkbox" class="inline" value="nasi_goreng" /> Nasi Goreng</label>
+        <label>
+        <input type="checkbox"  class="inline"  value="ketoprak" /> Ketoprak</label>
+      </fieldset>
+      <fieldset>
+        <label>Komentar:
+          <textarea name="comment" rows="3" cols="30" placeholder="Tulis komentar anda di sini..."></textarea>
+        </label>
+      </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
